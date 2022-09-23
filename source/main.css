@@ -154,6 +154,7 @@ a {
     background-color: darkcyan;
 }
 .hotproduct{
+    
     width: 1225px;
     border-bottom: 1px solid #eee;
 
@@ -173,11 +174,48 @@ a {
 #firer{
     padding: 5px 0px 0px 10px;
 }
+.hotproduct2nd{
+    display: flex;
+}
 .imgproduct{
-    width: 180px;
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+.imgproduct:hover,
+.noteadd:hover {
+    transform: scale(1.1);
+
 }
 .hotpd{
-    width: 20%;
+    /* width: 20%; */
+}
+.listsp{
+    display: flex;
+    gap: 20px;
+}
+.coverdiv{
+    position: relative;
+    overflow: hidden;
+}
+
+.noteadd{
+    padding-top: 6px;
+    color: white    ;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.3s linear;
+    width: 100%;
+    height: 28px;
+    bottom: 0%;
+    position: absolute;
+    background-color: #CC181E;
+    color: black;
+    float: inherit;
+    opacity: 0;
+}
+.coverdiv:hover .noteadd{
+     opacity: 1;
 }
 
 
