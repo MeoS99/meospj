@@ -149,9 +149,10 @@ a {
     align-items: center;
 }
 .maincontener{
+    padding-top: 3rem;
     display: flex;
     justify-content: center;
-    background-color: darkcyan;
+    background-color: white;
 }
 .hotproduct{
     
@@ -188,7 +189,7 @@ a {
 
 }
 .hotpd{
-    /* width: 20%; */
+    padding-top: 1rem;
 }
 .listsp{
     display: flex;
@@ -217,30 +218,16 @@ a {
 .coverdiv:hover .noteadd{
      opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.namepd{
+    color: #1e5480;
+    font-size: 14px;
+    overflow: hidden;
+    line-height: 18px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    text-overflow: ellipsis;
+    height: 36px;
+}
 
 .grid__column-2-4 {
     padding-left: 5px;
@@ -304,8 +291,9 @@ a {
     text-decoration: none;
     font-size: 1.1rem;
     display: block;
-    padding: 4px 0 4px 80px;
+    padding: 4px 0 4px 67px;
     color: white;
+    list-style: none;
 
 }
 
@@ -503,3 +491,46 @@ a {
 .hlft {
     padding: 3px 10px;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 1.5rem;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    overflow: hidden;
+  }
+  .others{
+    width: 46.8vh;
+    transform: scale(1);
+    transition: all 0.3s linear;
+  }
+  .items{
+    overflow: hidden;
+  }
+  .others:hover{
+    scale: 1.04;
+    overflow: hidden;
+  }
+  .bigones{
+    transform: scale(1);
+    transition: all 0.3s linear;
+  }
+  .bigones:hover{
+    scale: 1.04;
+    overflow: hidden;
+  }
+  .row-padding-15{
+    display: flex;
+  }
